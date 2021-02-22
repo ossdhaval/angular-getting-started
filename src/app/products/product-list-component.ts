@@ -9,6 +9,7 @@ export class ProductListComponent{
     pageTitle: String = 'Product List'; 
     imageWidth: number = 50;
     imageMargin: number = 2;
+    showImages: boolean = false;
     products: any[] = [
             {
             "productId": 1,
@@ -61,4 +62,8 @@ export class ProductListComponent{
             "imageUrl": "assets/images/xbox-controller.png"
             }
       ]
+
+      toggleShowImage(){
+          this.showImages = !this.showImages;
+      }
 }
